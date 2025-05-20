@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        background-image: url('https://c.ndtvimg.com/2025-04/vrc6q0pc_pm-narendra-modi_625x300_30_April_25.jpg');
+
+        background-size: cover;
+
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+
+        height: 300px;
+        width: 150px;
+        background-color: rgba(255, 68, 0, 0.797);
+        transition: 1s;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 150px;
+        background-color: rgba(0, 0, 0, 0.79);
+        /* left: 158px; */
+        right: 972px;
+        transition: 1s;
+    }
+    .box:hover::before{
+        width: 0;
+        transition: 1s;
+    }
+    .box:hover::after{
+        width: 0;
+        transition: 1s;
+    }
+
+
+    .box2{
+        height: 300px;
+        width: 300px;
+        background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/202504/cm-yogi-adityanath-24193697-16x9.jpg?VersionId=Yvyfkw7orQDkCdGkNyhW1u_pnx9EwyAV');
+        background-size: 300px 300px;
+
+        margin-left: 500px;
+        margin-top: -300px;
+    }
+    .box2::before{
+        content: '';
+        position: absolute;
+        height: 150px;
+        width: 300px;
+        background-color: rgba(0, 0, 255, 0.614);
+        transition: 1s;
+    }
+    .box2::after{
+        content: '';
+        position: absolute;
+        height: 150px;
+        width: 300px;
+        background-color: rgba(0, 0, 255, 0.614);
+        bottom: 252px;
+        transition: 1s;
+    }
+    .box2:hover::before{
+        height: 0;
+        width: 0;
+        transition: 1s;
+    }
+    .box2:hover::after{
+        height: 0;
+        width: 0;
+        transition: 1s;
+    }
+
+
+</style>
+<body>
+    
+    <div class="box"></div>
+    <div class="box2"></div>
+
+
+
+</body>
+</html>
