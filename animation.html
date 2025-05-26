@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: teal;
+
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes ani1{
+        from{
+            height: 0px;
+            width: 0px;
+        }
+        to{
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: 100px 400px;
+            border: 10px dotted yellow;
+            background-image: url('https://wallpapers.com/images/hd/bag-and-cup-of-coffee-01pjkia0sox3a71m.jpg');
+            background-size: cover;
+        }
+    }
+</style>
+<body>
+
+
+    <div class="box"></div>
+    
+</body>
+</html>
