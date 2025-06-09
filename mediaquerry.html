@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        height: 400px;
+        width: 95%;
+        background-color: teal;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        width: 30%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .para{
+        width: 65%;
+        color: red;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+
+    @media(max-width: 500px){
+        .main{
+            background-color: red;
+            height: auto;
+            display: block;
+            padding: 10px;
+            
+        }
+        .para{
+            color: white;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .logo{
+            width: 100%;
+            text-align: center;
+        }
+        .logo img{
+            height: auto;
+            width: 90%;
+            border-radius: 40px;
+        }
+    }
+
+    /* @media(min-width: 900px){
+        .main{
+            background-color: green;
+            height: 100%;
+            padding: 10px;
+        }
+        .logo{
+            width: 45%;
+        }
+        .logo img{
+            /* height: auto; 
+            box-shadow: 10px 10px 10px white;
+        }
+        .para{
+            width: 50%;
+            color: white;
+            font-size: 20px;
+            /* font-family: cursive; 
+        }
+    } */
+
+</style>
+<body>
+    
+    <div class="main">
+        <div class="logo">
+            <img src="https://pbs.twimg.com/profile_images/968380843906527233/26WKEI9O_400x400.jpg" alt="">
+        </div>
+
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facilis dolores exercitationem aspernatur hic! Eius officiis debitis, exercitationem expedita quaerat nihil ut ratione qui dolor reprehenderit quia cumque similique totam ab eum. Quaerat obcaecati repellendus aperiam, sint sit voluptates earum. Nostrum nulla suscipit corporis, reprehenderit earum voluptatum corrupti modi? Nobis nihil quos, culpa voluptatem ad nesciunt architecto consequuntur! Dolore voluptatem reiciendis dolores. Aut adipisci cumque, et recusandae aperiam dolores hic enim commodi eveniet ratione voluptas porro optio maxime culpa vel, unde animi. Dolorum, ut a est, nobis magni eaque veritatis distinctio, enim ullam incidunt provident alias maiores quibusdam accusantium sed?
+        </div>
+    </div>
+
+</body>
+</html>
