@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 400px;
+        width: 400px;
+        border: 2px solid black;
+        margin: 100px 400px;
+
+        /* background-color: red  black; */
+
+        /* background: linear-gradient(red , green , blue , orange); */
+        /* background: linear-gradient(to left , red , green , blue , orange); */
+        /* background: linear-gradient(to left top , red , green , blue , orange); */
+        /* background: linear-gradient(to left , red 20%, green 30%, blue 40%, orange 50%); */
+
+        /* background: repeating-linear-gradient(to left top, red 10%, green 30%, blue 40%, orange 50%); */
+
+        background-image: radial-gradient(red , green 20%, blue 40%, orange 50%);
+        background-image: repeating-radial-gradient(red , green 10%, blue 20%, orange 30%);
+
+
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        border-radius: 40%;
+
+
+    }
+    @keyframes ani1{
+        0%{
+            transform: rotate(0deg) scale(0.5);
+        }
+        100%{
+            transform: rotate(360deg) scale(1.5);
+        }
+    }
+</style>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
